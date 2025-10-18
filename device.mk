@@ -11,8 +11,13 @@ $(call inherit-product, vendor/xiaomi/peridot-miuicamera/peridot-miuicamera-vend
 $(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 # Overlay
+ifeq ($(TARGET_INCLUDE_PIXEL_LAUNCHER),true)
+PRODUCT_PACKAGES += \
+    PixelLauncherCameraOverlay
+else
 PRODUCT_PACKAGES += \
     NothingOSCameraOverlay
+endif
 
 # Public libraries
 PRODUCT_COPY_FILES += \
