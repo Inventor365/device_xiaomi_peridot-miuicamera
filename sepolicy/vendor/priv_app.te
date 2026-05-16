@@ -1,0 +1,9 @@
+allow priv_app hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+binder_call(priv_app, hal_camerapostproc_xiaomi)
+binder_call(hal_camerapostproc_xiaomi, priv_app)
+
+allow priv_app vendor_camera_data_file:dir create_dir_perms;
+allow priv_app vendor_camera_data_file:file create_file_perms;
+
+get_prop(priv_app, vendor_camera_prop)
+get_prop(priv_app, vendor_display_prop)

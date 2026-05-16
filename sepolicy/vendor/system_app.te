@@ -1,0 +1,5 @@
+allow system_app hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
+binder_call(system_app, hal_camerapostproc_xiaomi)
+
+get_prop(system_app, vendor_camera_prop)
+get_prop(system_app, vendor_display_prop)
