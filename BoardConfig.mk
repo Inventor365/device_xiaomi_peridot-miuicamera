@@ -10,8 +10,8 @@ include vendor/xiaomi/peridot-miuicamera/BoardConfigVendor.mk
 MIUICAMERA_PATH := device/xiaomi/peridot-miuicamera
 
 # Properties
-TARGET_SYSTEM_PROP += $(MIUICAMERA_PATH)/system.prop
-TARGET_VENDOR_PROP += $(MIUICAMERA_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(MIUICAMERA_PATH)/props/system.prop
+TARGET_VENDOR_PROP += $(MIUICAMERA_PATH)/props/vendor.prop
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(MIUICAMERA_PATH)/sepolicy/vendor
