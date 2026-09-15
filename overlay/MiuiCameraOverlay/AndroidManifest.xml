@@ -6,7 +6,7 @@
 
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.camera.overlay.nexuslauncher">
+    package="com.android.camera.overlay">
 
     <overlay
         android:isStatic="true"
